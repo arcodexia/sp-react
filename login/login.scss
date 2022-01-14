@@ -1,0 +1,146 @@
+.loginModal {
+    .modal-dialog {
+        // max-width: 42%;
+        max-width: 590px;
+
+        .modal-content {
+            border: 2px solid var(--primaryColor);
+            border-radius: 25px;
+        }
+
+        .modal-body {
+            padding: 30px 40px;
+        }
+    }
+}
+
+.loginInputField {
+    border-radius: 30px !important;
+    font-size: 16px !important;
+    height: 55px !important;
+    padding: 6px 28px !important;
+}
+
+.loginInputField:focus {
+    box-shadow: none;
+    border-color: var(--secondaryColor) !important;
+    box-shadow: 0 0 0 0.2rem #ff6b0250 !important;
+}
+
+.socialMediaLogin {
+    margin-top: 15px;
+    height: 55px;
+    border-radius: 30px !important;
+    width: 100%;
+    font-size: 17px !important;
+    border-color: #3B5998 !important;
+    background-color: #3B5998 !important;
+
+    i {
+        font-size: 18px;
+    }
+
+    &.gmailLoginBtn {
+        background-color: white !important;
+        color: #dc3545 !important;
+        border-color: #dc3545 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+.gmailLoginBtn:hover {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+.passwordField {
+    padding-right: 65px !important;
+}
+
+.eyeIcon {
+    position: absolute;
+    bottom: 15px;
+    right: 28px;
+    z-index: 226;
+    cursor: pointer;
+}
+
+.hoverItem {
+    transition: all 0.25s ease-in-out;
+}
+
+.hoverItem:hover {
+    color: var(--secondaryColor) !important;
+}
+
+.logIn-btn {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px !important;
+    background-color: var(--secondaryColor) !important;
+    border-color: var(--secondaryColor) !important;
+    color: white !important;
+    height: 55px !important;
+    border-radius: 30px !important;
+}
+
+.invalid-text{
+    color: red;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+  }
+
+
+@media only screen and (max-width: 576px) {
+    .loginModal {
+        .modal-body {
+            padding: 30px 20px !important;
+
+            .text-center.mb-5 {
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+
+    .loginInputField {
+        border-radius: 30px !important;
+        font-size: 14px !important;
+        height: 48px !important;
+        padding: 6px 28px !important;
+    }
+
+    .passwordField {
+        padding-right: 65px !important;
+    }
+
+    .socialMediaLogin {
+        margin-top: 10px;
+        height: 48px;
+        font-size: 14px !important;
+    }
+
+    .row.justify-content-between.my-3 {
+        .col-6:first-child {
+            padding-right: 8px !important;
+        }
+
+        .col-6:last-child {
+            padding-left: 8px !important;
+        }
+    }
+
+    .logIn-btn {
+        margin-top: 14px;
+        font-size: 15px !important;
+        height: 48px !important;
+    }
+}

@@ -1,0 +1,66 @@
+.header {
+    background: #343C5C;
+    color: white;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11536;
+    padding: 5px 50px;
+    width: 100%;
+
+    .cellNumb {
+        margin: 0px 7vw;
+    }
+
+    .socialIcon {
+        img {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        i {
+            margin-right: 20px;
+            cursor: pointer;
+            font-size: 22px;
+            transition: color 0.15s ease-out;
+        }
+    }
+
+    .socialIcon i:hover {
+        color: var(--secondaryColor);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .header {
+
+        display: none;
+        min-height: unset;
+        padding: 5px 15px 15px 15px;
+        width: 100%;
+        text-align: right;
+
+        .cellNumb {
+            margin: 10px 0px;
+        }
+        p
+        {
+            font-size: 14px;
+        }
+        .socialIcon {
+            display: none;
+            i {
+                margin-right: 20px;
+            }
+
+            i:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}

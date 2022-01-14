@@ -1,0 +1,102 @@
+.profileMainCont {
+  margin: 155px 0px 70px 0px;
+}
+
+.userProfileImg {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.editProfileInput {
+  margin: 15px 0px 20px 0px !important;
+
+  label {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .form-control {
+    border-color: #ced4da;
+    border-radius: 6px;
+    padding: 5px 15px;
+    height: 45px;
+    font-size: 14px;
+  }
+}
+
+.profileSaveBtn {
+  font-size: 16px !important;
+  width: 300px;
+  height: 48px !important;
+}
+
+.custom-file-upload {
+  cursor: pointer;
+}
+
+#photo-upload {
+  margin-top: 3%;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000000;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.uploadBtn::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.uploadBtn::before {
+  content: 'Upload Picture';
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.uploadBtn {
+  height: 40px;
+  border-radius: 7px !important;
+  width: 120px;
+  text-align: center !important;
+  font-size: 16px !important;
+  padding: 4px !important;
+  background-color: var(--secondaryColor) !important;
+  border-color: var(--secondaryColor) !important;
+  color: white !important;
+  font-family: "system-ui";
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .profileMainCont {
+    margin: 150px 0px 40px 0px;
+  }
+
+  .row.pb-5.justify-content-center {
+    padding-bottom: 20px !important;
+
+    .col-sm-8 {
+      padding: 0px 8px !important;
+    }
+  }
+
+  .profileSaveBtn {
+    width: 89%;
+  }
+}

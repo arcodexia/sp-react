@@ -1,0 +1,21 @@
+.designToolEditCont
+{
+    justify-content: center;
+    margin: 155px 0px 70px 0px;
+}
+
+@media only screen and (max-width: 576px) {
+    .designToolEditCont
+    {
+        margin: 140px 0px 40px 0px;
+        padding: 0px 18px;
+        h2
+        {
+            font-size: 24px;
+        }
+        p.appTxt
+        {
+            font-size: 15px !important;
+        }
+    }
+}

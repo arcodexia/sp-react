@@ -1,0 +1,164 @@
+.myOrderMainCont {
+    margin: 145px 0px 30px 0px;
+}
+
+.orderssummaryCard {
+    border: 0px !important;
+    min-height: 140px;
+    display: grid !important;
+    align-items: center;
+    padding: 0px 15px;
+    background: white;
+    cursor: pointer;
+}
+
+.orderTable {
+    margin-top: 40px;
+    thead {
+        th {
+            border: 0px !important;
+            z-index: 444;
+            background-color: #f8f8f9 !important;
+            color: var(--primaryColor) !important;
+            font-size: 14px;
+            height: 65px;
+            vertical-align: middle !important;
+        }
+
+        th:last-child {
+            text-align: center;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 25px solid #F7F7F7;
+            background-color: white;
+        }
+
+        tr:hover {
+            color: var(--primaryColor);
+            background-color: rgba(0, 0, 0, .075);
+        }
+
+        tr:last-child {
+            border-bottom: 0px;
+        }
+
+        td {
+            vertical-align: middle !important;
+            font-size: 14px;
+            color: var(--primaryColor);
+            border-top: 0px;
+        }
+
+        .StatusBtn {
+            font-size: 14px;
+            color: var(--primaryColor);
+            align-self: center;
+
+            &.pending {
+                color: #FD5454;
+            }
+
+            &.completed {
+                color: #6CBD89;
+            }
+        }
+
+        .myorderReviews {
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            width: fit-content;
+            i {
+                color: #b3b3b3;
+                margin-right: 2px;
+                font-size: 14px;
+
+                &.rated {
+                    color: #F08D1E;
+                }
+            }
+        }
+        .myorderReviews:hover
+        {
+            border-bottom: 2px solid var(--primaryColor);
+        }
+        .addorderReviewBtn {
+            height: 38px !important;
+            width: 100px !important;
+            min-width: 100px;
+        }
+
+        td:last-child {
+            text-align: center;
+        }
+
+    }
+
+    .productInfo {
+        img {
+            height: 45px;
+            width: 45px;
+            min-width: 45px;
+            border-radius: 50%;
+            margin-right: 12px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .myOrderMainCont {
+        margin: 150px 0px 30px 0px;
+        h2
+        {
+            margin-bottom: 0px !important;
+            font-size: 24px;
+        }
+    }
+    .row.justify-content-center {
+        .col-sm-12.pl-4 {
+            padding: 0px 18px !important;
+        }
+    }
+
+    .row.mb-4 {
+        .col-sm-4 {
+            padding: 0px 15px !important;
+
+            .orderssummaryCard {
+                margin-top: 20px;
+                min-height: 120px;
+            }
+        }
+    }
+
+    .orderTable {
+        tbody {
+            td:first-child {
+                min-width: 180px;
+            }
+
+            td:nth-child(2) {
+                min-width: 100px;
+            }
+
+            td:nth-child(3) {
+                min-width: 140px;
+            }
+
+            td:nth-child(5) {
+                min-width: 120px;
+            }
+
+            td:nth-child(6) {
+                min-width: 140px;
+            }
+        }
+    }
+
+    .orderTable::-webkit-scrollbar {
+        display: none !important;
+    }
+}

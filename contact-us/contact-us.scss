@@ -1,0 +1,71 @@
+.contactusForm {
+    border-radius: 15px;
+    background: white;
+    min-height: 150px;
+    padding: 30px 0px;
+
+    .contactusInputCont {
+        margin-bottom: 30px;
+
+        label {
+            margin-bottom: 0px;
+            font-size: 14px;
+        }
+
+        .form-control {
+            border: 0px;
+            border-bottom: 1px solid #707070;
+            border-radius: 0px;
+            padding: 0px;
+            height: 45px;
+            font-size: 15px;
+        }
+
+        textarea {
+            padding: 10px 0px !important;
+        }
+    }
+
+    .sendBtnCont {
+        align-self: flex-end;
+        margin-bottom: 10px;
+
+        button {
+            height: 45px;
+            border-radius: 8px !important;
+            font-size: 15px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .contactusForm {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .contactusInputCont {
+            margin-bottom: 20px;
+        }
+
+        .col-sm-6,
+        .col-sm-9,
+        .col-sm-3 {
+            padding: 0px !important;
+        }
+
+        .sendBtnCont {
+            margin: 30px 0px 0px 0px;
+
+            button {
+                height: 45px;
+                border-radius: 8px !important;
+                font-size: 15px !important;
+            }
+        }
+    }
+}

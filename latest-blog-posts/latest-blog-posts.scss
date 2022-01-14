@@ -1,0 +1,33 @@
+.postMainCont {
+    padding-bottom: 60px;
+    justify-content: center;
+
+    .headingCont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        margin-bottom: 30px;
+    }
+
+    .btn-outline-primary {
+        height: 45px;
+        width: 100px;
+        border-radius: 8px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .postMainCont {
+        padding: 10px 10px 40px 10px;
+        .headingCont {
+            padding: 0px 15px;
+            margin-bottom: 20px;
+            h2
+            {
+                font-size: 24px;
+            }
+        }
+    }
+}

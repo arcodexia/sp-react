@@ -1,0 +1,51 @@
+.productsCont {
+    justify-content: center;
+    padding: 60px 0px;
+
+    .amazingProdheading {
+        text-align: center;
+
+        .borderedItem {
+            width: 130px;
+            margin: 25px auto 45px auto;
+            height: 4px;
+            background: var(--primaryColor);
+        }
+    }
+
+    .primaryBtn {
+        height: 52px;
+        width: 220px;
+        font-size: 16px !important;
+        border-radius: 8px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .productsCont {
+        padding: 30px 10px !important;
+
+        .amazingProdheading {
+            h2 {
+                font-size: 24px !important;
+            }
+
+            .borderedItem {
+                width: 120px;
+                margin: 20px auto 25px auto;
+                height: 3px;
+                background: var(--primaryColor);
+            }
+        }
+        .primaryBtn {
+            height: 45px;
+            width: 200px;
+            font-size: 14px !important;
+            border-radius: 6px !important;
+        }
+        .text-center
+        {
+            margin-top: 20px !important;
+        }
+    }
+}

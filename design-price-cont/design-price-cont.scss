@@ -1,0 +1,110 @@
+.designPriceMainCont {
+    margin-bottom: 60px;
+    justify-content: center;
+
+    .designPriceCont {
+        background: white;
+        border-radius: 15px;
+        padding: 25px 2.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cartItemDespCont {
+            padding: 0px 1%;
+            width: 80%;
+
+            .cartDetailItem {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 40%;
+                margin-top: 10px;
+
+                p {
+                    margin: 0px;
+                }
+            }
+
+            .cartDetailItem:nth-of-type(even) {
+                margin-left: 10%;
+            }
+
+            .ml10{
+                margin-left: 10%;
+            }
+        }
+
+        .cartRightItemCont {
+            width: 18%;
+            text-align: right;
+
+            button {
+                margin: 10px 0px;
+                width: 80%;
+                height: 45px;
+                font-size: 15px !important;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .designPriceMainCont {
+        margin-bottom: 40px;
+        padding: 0px 18px;
+
+        .designPriceCont {
+            padding: 5px 18px 20px 18px;
+            display: block;
+    
+    
+            .cartItemDespCont {
+                padding: 0px;
+                width: 100%;
+    
+                h2 {
+                    margin-top: 20px;
+                    text-align: center;
+                    font-size: 25px;
+                }
+    
+                .cartDetailItem {
+                    width: 45%;
+                    margin-top: 10px;
+    
+                    p {
+                        margin: 0px;
+                        font-size: 13px !important;
+                    }
+                }
+    
+                .cartDetailItem:nth-of-type(even) {
+                    margin-left: 7%;
+                }
+            }
+    
+            .cartRightItemCont {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                h3 {
+                    font-size: 22px !important;
+                    margin-bottom: 0px !important;
+                }
+    
+                .primaryBtn {
+                    margin: 0px;
+                    width: 150px;
+                    height: 45px;
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+}
